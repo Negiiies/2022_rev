@@ -7,6 +7,7 @@ char *rev(char *buffer)
     int j;
     char *k;
     int a;
+
     a = 0;
     i = 0;
     j = 0;
@@ -26,7 +27,7 @@ char *rev(char *buffer)
         j += 1;
     }
     write(1, k, stu_strlen(k));
-    // write(1,"\n",1);
+    write(1,"\n",1);
     free(k);
     return(0);
 }
