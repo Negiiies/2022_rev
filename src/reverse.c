@@ -21,12 +21,12 @@ char *rev(char *buffer)
     j = 0;
     k = malloc(sizeof(char) * 32);
     while(buffer[j] != '\0') {
-        while (buffer[i] != '\n') {
+        while (buffer[i] != '\n' && buffer[i] != '\0') {
             i += 1;
         }
         k[i] = '\n';
         a = i + 1;
-        while(buffer[j] != '\n') {
+        while(buffer[j] != '\n' && buffer[j] != '\0') {
             k[j] = buffer[i - 1];
             j += 1;
             i -= 1;
