@@ -13,12 +13,12 @@ char *rev(char *buffer)
     j = 0;
     k = malloc(sizeof(char) * 32);
     while(buffer[j] != '\0') {
-        while (buffer[i] != '\n'){
+        while (buffer[i] != '\n') {
             i += 1;
         }
         k[i] = '\n';
         a = i + 1;
-        while(buffer[j] != '\n'){
+        while(buffer[j] != '\n') {
             k[j] = buffer[i - 1];
             j += 1;
             i -= 1;
@@ -27,7 +27,6 @@ char *rev(char *buffer)
         j += 1;
     }
     write(1, k, stu_strlen(k));
-    write(1,"\n",1);
     free(k);
     return(0);
 }
