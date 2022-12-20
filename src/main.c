@@ -25,20 +25,14 @@ int main(void)
         stu_strcat(stck_1, buffer);
         stck_2 = strdup(stck_1);
     }
-    write (1, buffer, stu_strlen(buffer));
-    printf("zob: %s\n", stck_1);
+    //    write (1, buffer, stu_strlen(buffer));
+    //printf("zob: %s\n", stck_1);
     free(buffer);
     free(stck_1);
     free(stck_2);
 }
 
 /*
-  char *cat = malloc(sizeof(char) *2);
-  cat[0] = 'T';
-  cat[1] = 'e';
-  cat[2] = 's';
-  cat[3] = 't';
-  cat[4] = 0;
   if (!buffer){
   return (0);
   }
